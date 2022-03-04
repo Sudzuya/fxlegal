@@ -506,7 +506,7 @@ a {
   content: "";
   position: absolute;
   left: 160px;
-  background: url("img/arrow_down.svg");
+  background: url("../img/arrow_down.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -1494,7 +1494,7 @@ a {
   right: 38px;
   height: 9px;
   width: 14px;
-  background-image: url("img/arrow.svg");
+  background-image: url("../img/arrow.svg");
 }
 @media (max-width: 992px) {
   @supports (right: clamp( 0.9375rem , 0.2529761905rem  +  3.4226190476vw , 2.375rem )) {
@@ -2643,7 +2643,7 @@ a {
   content: "";
   position: absolute;
   left: 0;
-  background-image: url("img/plan_decor.svg");
+  background-image: url("../img/plan_decor.svg");
   height: 10px;
   width: 10px;
 }
