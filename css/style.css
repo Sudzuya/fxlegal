@@ -1540,16 +1540,16 @@ a {
   }
 }
 @media (max-width: 992px) {
-  @supports (padding-left: clamp( 0rem , -1.4880952381rem  +  7.4404761905vw , 3.125rem )) {
+  @supports (padding-left: clamp( 0.0625rem , -1.3958333333rem  +  7.2916666667vw , 3.125rem )) {
     .main-block__btn:last-child {
-      padding-left: clamp( 0rem , -1.4880952381rem  +  7.4404761905vw , 3.125rem );
+      padding-left: clamp( 0.0625rem , -1.3958333333rem  +  7.2916666667vw , 3.125rem );
     }
   }
 }
 @media (max-width: 992px) {
-  @supports not (padding-left: clamp( 0rem , -1.4880952381rem  +  7.4404761905vw , 3.125rem )) {
+  @supports not (padding-left: clamp( 0.0625rem , -1.3958333333rem  +  7.2916666667vw , 3.125rem )) {
     .main-block__btn:last-child {
-      padding-left: calc(0rem + 3.125 * (100vw - 20rem) / 42);
+      padding-left: calc(0.0625rem + 3.0625 * (100vw - 20rem) / 42);
     }
   }
 }
