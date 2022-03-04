@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220302172931">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220304183944">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,9 +26,51 @@
 							<button class="navigate__authorization btn-header btn_green">Sign up</button>
 						</div>
 						<div class="navigate__select-lang">
-							<button class="navigate__lang active">EN</button>
-							<button class="navigate__lang">RU</button>
+							<button class="navigate__lang">EN</button>
+							<button class="navigate__lang active">RU</button>
 						</div>
+					</div>
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+
+				</div>
+
+				<div class="header__mobile-body mobile-menu">
+					<ul class="mobile-menu__list">
+						<li class="mobile-menu__item">
+							<a href="#" data-goto-header data-goto=".who" class="mobile-menu__link">Who we are</a>
+						</li>
+						<li class="mobile-menu__item">
+							<a href="#" data-goto-header data-goto=".works" class="mobile-menu__link">How it works</a>
+						</li>
+						<li class="mobile-menu__item">
+							<a href="#" data-goto-header data-goto=".plan" class="mobile-menu__link">Plans</a>
+						</li>
+						<li class="mobile-menu__item">
+							<a href="#" data-goto-header data-goto=".functions" class="mobile-menu__link">Functions</a>
+						</li>
+						<li class="mobile-menu__item">
+							<a href="#" data-goto-header data-goto=".footer" class="mobile-menu__link">Contacts</a>
+						</li>
+					</ul>
+					<div data-spollers class="mobile-menu__lang select-lang">
+						<div class="select-lang__item">
+							<button type="button" data-spoller class="select-lang__title">Language</button>
+							<div class="select-lang__body">
+								<button class="select-lang__btn">EN</button>
+								<button class="select-lang__btn active">RU</button>
+							</div>
+						</div>
+					</div>
+					<div class="mobile-menu__social social-link">
+						<a href="#" class="social-link__item">
+							<img src="img/telegram_gray.svg" alt="">
+						</a>
+						<a href="#" class="social-link__item">
+							<img src="img/facebook_gray.svg" alt="">
+						</a>
+						<a href="#" class="social-link__item">
+							<img src="img/instagram_gray.svg" alt="">
+						</a>
 					</div>
 				</div>
 			</div>
@@ -138,105 +180,117 @@
 						<div class="plan__title title">
 							<h2>CHOOSE YOUR PLAN</h2>
 						</div>
-						<div class="plan__items plan-item">
-							<div class="plan-item__block">
-								<div class="plan-item__title">
-									<h3>DEMO</h3>
-								</div>
-								<div class="plan-item__price">
-									<p><span>$0</span>/per month</p>
-								</div>
-								<ul class="plan-item__advantagers">
-									<li>One account</li>
-									<li>Templates</li>
-									<li>Updates</li>
-									<li>Management</li>
-								</ul>
-								<div class="plan-item__btn-body">
-									<button class="plan-item__btn btn_green">
-										GET STARTED
-									</button>
-									<button class="plan-item__btn btn_gray">
-										MORE
-									</button>
+						<div class="plan__content">
+							<div class="plan-item-slider">
+								<div class="plan__items plan-item">
+									<div class="plan-item__block">
+										<div class="plan-item__title">
+											<h3>DEMO</h3>
+										</div>
+										<div class="plan-item__price">
+											<p><span>$0</span>/per month</p>
+										</div>
+										<ul class="plan-item__advantagers">
+											<li>One account</li>
+											<li>Templates</li>
+											<li>Updates</li>
+											<li>Management</li>
+										</ul>
+										<div class="plan-item__btn-body">
+											<button class="plan-item__btn btn_green">
+												GET STARTED
+											</button>
+											<button class="plan-item__btn btn_gray">
+												MORE
+											</button>
+										</div>
+									</div>
+									<div class="plan-item__block">
+										<div class="plan-item__title">
+											<h3>LITE</h3>
+										</div>
+										<div class="plan-item__price">
+											<p><span>$1,99</span>/per month</p>
+										</div>
+										<ul class="plan-item__advantagers">
+											<li>One account</li>
+											<li>Templates</li>
+											<li>Updates</li>
+											<li>Management</li>
+											<li>Transfer control</li>
+											<li>State save</li>
+										</ul>
+										<div class="plan-item__btn-body">
+											<button class="plan-item__btn btn_green">
+												GET STARTED
+											</button>
+											<button class="plan-item__btn btn_gray">
+												MORE
+											</button>
+										</div>
+									</div>
+									<div class="plan-item__block">
+										<div class="plan-item__title">
+											<h3>PRO</h3>
+										</div>
+										<div class="plan-item__price">
+											<p><span>$2,99</span>/per month</p>
+										</div>
+										<ul class="plan-item__advantagers">
+											<li>One account</li>
+											<li>Templates</li>
+											<li>Updates</li>
+											<li>Management</li>
+											<li>Transfer control</li>
+											<li>State save</li>
+											<li>API</li>
+											<li>Take control</li>
+										</ul>
+										<div class="plan-item__btn-body">
+											<button class="plan-item__btn btn_green">
+												GET STARTED
+											</button>
+											<button class="plan-item__btn btn_gray">
+												MORE
+											</button>
+										</div>
+									</div>
+									<div class="plan-item__block">
+										<div class="plan-item__title">
+											<h3>MEGA</h3>
+										</div>
+										<div class="plan-item__price">
+											<p><span>$9,99</span>/per month</p>
+										</div>
+										<ul class="plan-item__advantagers">
+											<li>One account</li>
+											<li>Templates</li>
+											<li>Updates</li>
+											<li>Management</li>
+											<li>Transfer control</li>
+											<li>State save</li>
+											<li>API</li>
+											<li>Take control</li>
+											<li>Administration</li>
+										</ul>
+										<div class="plan-item__btn-body">
+											<button class="plan-item__btn btn_green">
+												GET STARTED
+											</button>
+											<button class="plan-item__btn btn_gray">
+												MORE
+											</button>
+										</div>
+									</div>
 								</div>
 							</div>
-							<div class="plan-item__block">
-								<div class="plan-item__title">
-									<h3>LITE</h3>
-								</div>
-								<div class="plan-item__price">
-									<p><span>$1,99</span>/per month</p>
-								</div>
-								<ul class="plan-item__advantagers">
-									<li>One account</li>
-									<li>Templates</li>
-									<li>Updates</li>
-									<li>Management</li>
-									<li>Transfer control</li>
-									<li>State save</li>
-								</ul>
-								<div class="plan-item__btn-body">
-									<button class="plan-item__btn btn_green">
-										GET STARTED
-									</button>
-									<button class="plan-item__btn btn_gray">
-										MORE
-									</button>
-								</div>
-							</div>
-							<div class="plan-item__block">
-								<div class="plan-item__title">
-									<h3>PRO</h3>
-								</div>
-								<div class="plan-item__price">
-									<p><span>$2,99</span>/per month</p>
-								</div>
-								<ul class="plan-item__advantagers">
-									<li>One account</li>
-									<li>Templates</li>
-									<li>Updates</li>
-									<li>Management</li>
-									<li>Transfer control</li>
-									<li>State save</li>
-									<li>API</li>
-									<li>Take control</li>
-								</ul>
-								<div class="plan-item__btn-body">
-									<button class="plan-item__btn btn_green">
-										GET STARTED
-									</button>
-									<button class="plan-item__btn btn_gray">
-										MORE
-									</button>
-								</div>
-							</div>
-							<div class="plan-item__block">
-								<div class="plan-item__title">
-									<h3>MEGA</h3>
-								</div>
-								<div class="plan-item__price">
-									<p><span>$9,99</span>/per month</p>
-								</div>
-								<ul class="plan-item__advantagers">
-									<li>One account</li>
-									<li>Templates</li>
-									<li>Updates</li>
-									<li>Management</li>
-									<li>Transfer control</li>
-									<li>State save</li>
-									<li>API</li>
-									<li>Take control</li>
-									<li>Administration</li>
-								</ul>
-								<div class="plan-item__btn-body">
-									<button class="plan-item__btn btn_green">
-										GET STARTED
-									</button>
-									<button class="plan-item__btn btn_gray">
-										MORE
-									</button>
-								</div>
+							<div class="plan__navigation navigation-slider">
+								<button class="navigation-slider__button-prev">
+									<img src="img/arrow_down.svg" alt="">
+								</button>
+								<button class="navigation-slider__button-next">
+									<img src="img/arrow_down.svg" alt="">
+								</button>
 							</div>
 						</div>
 					</div>
@@ -326,6 +380,9 @@
 					<div class="functions__body">
 						<div class="functions__title title">
 							<h2>Functions</h2>
+						</div>
+						<div class="functions__sub-title">
+							<p>Remote control will allow you:</p>
 						</div>
 						<ul class="functions__list">
 							<li class="functions__item">
@@ -468,7 +525,7 @@
 	</div>
 </div>
  -->
-	<script src="js/app.min.js?_v=20220302172931"></script>
+	<script src="js/app.min.js?_v=20220304183944"></script>
 </body>
 
 </html>
