@@ -3393,10 +3393,9 @@
                 on: {
                     init: function() {},
                     resize: function() {
-                        window.addEventListener("resize", (function() {
-                            let screenWidth = window.screen.width;
-                            if (screenWidth >= "600") planSlider.destroy();
-                        }));
+                        let screenWidth = window.screen.width;
+                        console.log(screenWidth);
+                        if (screenWidth >= "600") planSlider.destroy();
                     }
                 }
             });
@@ -3404,9 +3403,9 @@
     }
     window.addEventListener("load", (function(e) {
         function startSlider() {
-            initSliders();
+            let screenWidth = window.screen.width;
+            if (screenWidth <= "600") initSliders();
             window.addEventListener("resize", (function() {
-                let screenWidth = window.screen.width;
                 if (screenWidth <= "600") initSliders();
             }));
         }
