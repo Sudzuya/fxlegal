@@ -3393,9 +3393,8 @@
                 on: {
                     init: function() {},
                     resize: function() {
-                        let screenWidth = window.screen.width;
-                        console.log(screenWidth);
-                        if (screenWidth >= "600") planSlider.destroy();
+                        let screenWidth = window.outerWidth;
+                        if (screenWidth > "600") planSlider.destroy();
                     }
                 }
             });
@@ -3406,7 +3405,11 @@
             let screenWidth = window.screen.width;
             if (screenWidth <= "600") initSliders();
             window.addEventListener("resize", (function() {
-                if (screenWidth <= "600") initSliders();
+                let screenWidth = window.screen.width;
+                if (screenWidth <= "600") {
+                    initSliders();
+                    console.log(screenWidth);
+                }
             }));
         }
         startSlider();
