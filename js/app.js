@@ -3470,10 +3470,9 @@
     }
     function imageLoaded() {
         imagesLoadedCount++;
-        console.log(100 / imagesTotalCount * imagesLoadedCount);
         subLogo.style.height = 100 / imagesTotalCount * imagesLoadedCount + "%";
         if (imagesLoadedCount >= imagesLoadedCount) setTimeout((() => {
-            if (!preloader.classList.contains("done")) preloader.classList.add("done");
+            if (!preloader.classList.contains("done") && "100%" == subLogo.style.height) preloader.classList.add("done");
         }), 1e3);
     }
     window["FLS"] = true;
