@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220304183944">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220329182625">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +14,16 @@
 
 <body>
 	<div class="wrapper">
+		<div class="preloader">
+			<div class="preloader__body">
+				<div class="preloader__sub-img">
+					<img src="img/logo.svg" alt="">
+				</div>
+				<div class="preloader__main-img">
+					<img src="img/logo.svg" alt="">
+				</div>
+			</div>
+		</div>
 		<header class="header">
 			<div class="header__container">
 				<div class="header__body">
@@ -22,8 +32,8 @@
 					</a>
 					<div class="header__navigate navigate">
 						<div class="navigate__btn-body">
-							<button class="navigate__authorization btn-header btn_gray">Sign up</button>
-							<button class="navigate__authorization btn-header btn_green">Sign up</button>
+							<a href="#" class="navigate__authorization btn-header btn_gray">Sign up</a>
+							<a href="https://auth.fx.legal/" class="navigate__authorization btn-header btn_green">Sign up</a>
 						</div>
 						<div class="navigate__select-lang">
 							<button class="navigate__lang">EN</button>
@@ -61,6 +71,12 @@
 							</div>
 						</div>
 					</div>
+					<div class="mobile-menu__autorization">
+						<div class="mobile-menu__autorization-body">
+							<a href="#" class="mobile-menu__authorization btn-header btn_gray">Sign up</a>
+							<a href="https://auth.fx.legal/" class="mobile-menu__authorization btn-header btn_green">Sign up</a>
+						</div>
+					</div>
 					<div class="mobile-menu__social social-link">
 						<a href="#" class="social-link__item">
 							<img src="img/telegram_gray.svg" alt="">
@@ -78,21 +94,21 @@
 		<main class="page">
 			<section class="main-block">
 				<div class="main-block__bg">
-					<picture><source srcset="img/main_bg.webp" type="image/webp"><img src="img/main_bg.png" alt=""></picture>
+					<img src="img/dotted_bg.svg" alt="">
 				</div>
 				<div class="main-block__container">
 					<div class="main-block__body">
 						<div class="main-block__info">
 							<div class="main-block__title">
 								<h1>
-									Control your <br> Money with <span>FX</span>legal<span>.</span>
+									Control your <br> Money with <span>FX</span><span>legal</span><span>.</span>
 								</h1>
 							</div>
 							<div class="main-block__text">
 								<p>We have tried to make the management of advisors simple and accessible. Our robot does not trade - it helps to remotely manage other advisors.</p>
 							</div>
 							<div class="main-block__navigate">
-								<button class="main-block__btn btn btn_green">join</button>
+								<a href="https://auth.fx.legal/" class="main-block__btn btn btn_green">join</a>
 								<button class="main-block__btn btn">How it works</button>
 							</div>
 						</div>
@@ -197,10 +213,10 @@
 											<li>Management</li>
 										</ul>
 										<div class="plan-item__btn-body">
-											<button class="plan-item__btn btn_green">
+											<a href="https://auth.fx.legal/" class="plan-item__btn btn_green">
 												GET STARTED
-											</button>
-											<button class="plan-item__btn btn_gray">
+											</a>
+											<button data-goto=".functions" class="plan-item__btn btn_gray">
 												MORE
 											</button>
 										</div>
@@ -221,10 +237,10 @@
 											<li>State save</li>
 										</ul>
 										<div class="plan-item__btn-body">
-											<button class="plan-item__btn btn_green">
+											<a href="https://auth.fx.legal/" class="plan-item__btn btn_green">
 												GET STARTED
-											</button>
-											<button class="plan-item__btn btn_gray">
+											</a>
+											<button data-goto=".functions" class="plan-item__btn btn_gray">
 												MORE
 											</button>
 										</div>
@@ -247,10 +263,10 @@
 											<li>Take control</li>
 										</ul>
 										<div class="plan-item__btn-body">
-											<button class="plan-item__btn btn_green">
+											<a href="https://auth.fx.legal/" class="plan-item__btn btn_green">
 												GET STARTED
-											</button>
-											<button class="plan-item__btn btn_gray">
+											</a>
+											<button data-goto=".functions" class="plan-item__btn btn_gray">
 												MORE
 											</button>
 										</div>
@@ -274,10 +290,10 @@
 											<li>Administration</li>
 										</ul>
 										<div class="plan-item__btn-body">
-											<button class="plan-item__btn btn_green">
+											<a href="https://auth.fx.legal/" class="plan-item__btn btn_green">
 												GET STARTED
-											</button>
-											<button class="plan-item__btn btn_gray">
+											</a>
+											<button data-goto=".functions" class="plan-item__btn btn_gray">
 												MORE
 											</button>
 										</div>
@@ -474,7 +490,7 @@
 				<div class="footer__body">
 					<div class="footer__logo-info logo-info">
 						<a href="#" class="logo-info__logo">
-							<img src="img/logo.svg" alt="">
+							<img src="img/logo_footer.svg" alt="">
 						</a>
 						<div class="logo-info__text">
 							<p>Your reliable assistant in the market. We have made managing assistants easier and more reliable.</p>
@@ -525,7 +541,7 @@
 	</div>
 </div>
  -->
-	<script src="js/app.min.js?_v=20220304183944"></script>
+	<script src="js/app.min.js?_v=20220329182625"></script>
 </body>
 
 </html>
