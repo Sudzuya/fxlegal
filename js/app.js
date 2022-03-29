@@ -3461,6 +3461,21 @@
             }));
         }
     }), 0);
+    let script_images = document.images, imagesTotalCount = script_images.length, imagesLoadedCount = 0, subLogo = document.querySelector(".preloader__main-img"), preloader = document.querySelector(".preloader");
+    for (let i = 0; i < imagesTotalCount; i++) {
+        let imagesClone = new Image;
+        imagesClone.onload = imageLoaded;
+        imagesClone.onerror = imageLoaded;
+        imagesClone.src = script_images[i].src;
+    }
+    function imageLoaded() {
+        imagesLoadedCount++;
+        console.log(100 / imagesTotalCount * imagesLoadedCount);
+        subLogo.style.height = 100 / imagesTotalCount * imagesLoadedCount + "%";
+        if (imagesLoadedCount >= imagesLoadedCount) setTimeout((() => {
+            if (!preloader.classList.contains("done")) preloader.classList.add("done");
+        }), 1e3);
+    }
     window["FLS"] = true;
     isWebp();
     menuInit();
