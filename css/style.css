@@ -356,7 +356,7 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
   height: 100px;
-  width: 355px;
+  width: 250px;
 }
 @media (max-width: 768px) {
   @supports (width: clamp( 16.25rem , 12.0089285714rem  +  21.2053571429vw , 22.1875rem )) {
@@ -376,7 +376,7 @@ a {
   }
 }
 .preloader__body img {
-  width: 355px;
+  width: 250px;
   height: 100px;
   object-fit: contain;
 }
@@ -416,6 +416,7 @@ a {
 
 .preloader.load {
   opacity: 0;
+  z-index: -1;
 }
 
 .header {
