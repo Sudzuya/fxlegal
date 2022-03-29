@@ -3472,7 +3472,10 @@
         imagesLoadedCount++;
         subLogo.style.height = 100 / imagesTotalCount * imagesLoadedCount + "%";
         if (imagesLoadedCount >= imagesLoadedCount) setTimeout((() => {
-            if (!preloader.classList.contains("done") && "100%" == subLogo.style.height) preloader.classList.add("done");
+            if (!preloader.classList.contains("done") && "100%" == subLogo.style.height) {
+                document.querySelector(".wrapper").classList.add("load");
+                preloader.classList.add("load");
+            }
         }), 1e3);
     }
     window["FLS"] = true;
