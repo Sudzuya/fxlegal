@@ -1,0 +1,129 @@
+// Заголовки, общие БЄМ блоки и проче...
+body {
+    background: #F2F2F2;
+    @media (max-width: 1600px) {
+        @include adaptiveValue("font-size", 24, 14, 1600, 400);
+    }
+}
+.wrapper{
+    transition: all .5s ease;
+    opacity: 0;
+}
+.wrapper.load{
+    opacity: 1;
+}
+a {
+    display: inline-flex;
+    @media (max-width: 1600px) {
+        @include adaptiveValue("font-size", 24, 14, 1600, 400);
+    }
+}
+.btn-header {
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    width: 258px;
+    height: 69px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    @media (max-width:992px) {
+        @include adaptiveValue("border-radius", 15 , 5, 992, 320 );
+        @include adaptiveValue("width", 258 , 156, 992, 320 );
+        @include adaptiveValue("height", 69 , 42, 992, 320 );
+    }
+    &_green {
+        color: #FFFFFF;
+        background: #70DC9D;
+        transition: all .5s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover {
+            background: #51A875;
+        }
+    }
+    &_gray {
+        color: #808080;
+        border: 1px solid rgba($color: #000000, $alpha: 0.06);
+        transition: all .5s ease;
+        &:hover {
+            color: #0A0A0A;
+            border: 1px solid #0A0A0A;
+        }
+    }
+}
+
+.title {
+    font-size: 96px;
+    font-weight: 700;
+    text-align: center;
+    @media (max-width: 1600px) {
+        @include adaptiveValue("font-size", 96, 64, 1600, 1024);
+    }
+    @media (max-width: 1199px) {
+        @include adaptiveValue("font-size", 64, 24, 1199, 320);
+    }
+}
+
+.text-center {
+    text-align: center;
+    line-height: 147.69%;
+}
+.preloader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: white;
+    z-index: 999;
+    transition: all .5s ease;
+    opacity: 1;
+    &__body{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 100px;
+        width: 250px;
+        @media (max-width:768px) {
+            @include adaptiveValue("width", 355 , 260, 768, 320 );
+        }
+        img{
+            width: 250px;
+            height: 100px;
+            object-fit: contain;
+            @media (max-width:768px) {
+                @include adaptiveValue("width", 355 , 260, 768, 320 );
+            }
+        }
+    }
+    &__sub-img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0.5;
+    }
+    &__main-img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 0%;
+        width: 100%;
+        overflow: hidden;
+    }
+}
+.preloader.load{
+    opacity: 0;
+    z-index: -1;
+}
