@@ -106,10 +106,12 @@ function initSliders() {
 				init: function() {
 
                 },
-				resize: function(){
+				resize: function() {
 					let screenWidth = window.outerWidth
 					if (screenWidth > '600'){
-						planSlider.destroy();
+						setTimeout(() => {
+							planSlider.destroy();
+						}, 300);
 					}
 				}
 			}
@@ -155,13 +157,16 @@ window.addEventListener("load", function (e) {
 	function startSlider(){
 		let screenWidth = window.screen.width
 		if (screenWidth <= '600'){
-			initSliders();
+			setTimeout(() => {
+				initSliders();
+			}, 300);
 		}
 		window.addEventListener('resize', function(){
 			let screenWidth = window.screen.width
 			if (screenWidth <= '600'){
-				initSliders();
-				console.log(screenWidth);
+				setTimeout(() => {
+					initSliders();
+				}, 300);
 			}
 		})
 	}
