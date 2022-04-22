@@ -397,6 +397,7 @@
         }
     }
     &__content{
+        height: auto;
         @media (max-width:600px) {
             position: relative;
             @include adaptiveValue("padding-right",40 ,0, 600, 320 );
