@@ -2189,8 +2189,6 @@
         if (swiper.support.touch || !swiper.params.simulateTouch || swiper.params.watchOverflow && swiper.isLocked || swiper.params.cssMode) return;
         const el = "container" === swiper.params.touchEventsTarget ? swiper.el : swiper.wrapperEl;
         el.style.cursor = "move";
-        el.style.cursor = moving ? "-webkit-grabbing" : "-webkit-grab";
-        el.style.cursor = moving ? "-moz-grabbin" : "-moz-grab";
         el.style.cursor = moving ? "grabbing" : "grab";
     }
     function unsetGrabCursor() {
@@ -2513,7 +2511,7 @@
         if (!enabled) return;
         swiper.previousTranslate = swiper.translate;
         if (swiper.isHorizontal()) swiper.translate = -wrapperEl.scrollLeft; else swiper.translate = -wrapperEl.scrollTop;
-        if (-0 === swiper.translate) swiper.translate = 0;
+        if (0 === swiper.translate) swiper.translate = 0;
         swiper.updateActiveIndex();
         swiper.updateSlidesClasses();
         let newProgress;
@@ -3394,7 +3392,9 @@
                     init: function() {},
                     resize: function() {
                         let screenWidth = window.outerWidth;
-                        if (screenWidth > "600") planSlider.destroy();
+                        if (screenWidth > "600") setTimeout((() => {
+                            planSlider.destroy();
+                        }), 300);
                     }
                 }
             });
@@ -3403,13 +3403,14 @@
     window.addEventListener("load", (function(e) {
         function startSlider() {
             let screenWidth = window.screen.width;
-            if (screenWidth <= "600") initSliders();
+            if (screenWidth <= "600") setTimeout((() => {
+                initSliders();
+            }), 300);
             window.addEventListener("resize", (function() {
                 let screenWidth = window.screen.width;
-                if (screenWidth <= "600") {
+                if (screenWidth <= "600") setTimeout((() => {
                     initSliders();
-                    console.log(screenWidth);
-                }
+                }), 300);
             }));
         }
         startSlider();

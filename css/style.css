@@ -2564,6 +2564,9 @@ a {
     margin-bottom: inherit;
   }
 }
+.plan__content {
+  height: auto;
+}
 @media (max-width: 600px) {
   .plan__content {
     position: relative;
