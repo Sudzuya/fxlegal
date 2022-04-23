@@ -69,7 +69,7 @@
             @include adaptiveValue("line-height", 125, 84, 1600, 1024);
             @include adaptiveValue("margin-bottom", 53, 36, 1600, 1024);
         }
-        @media(max-width: 1024px) {
+        @media(max-width: 1023px) {
             @include adaptiveValue("font-size", 64, 28, 1024, 320);
             @include adaptiveValue("line-height", 84, 35, 1024, 320);
             @include adaptiveValue("margin-bottom", 36, 20, 1024, 320);
