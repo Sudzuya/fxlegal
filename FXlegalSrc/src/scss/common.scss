@@ -1,7 +1,7 @@
 // Заголовки, общие БЄМ блоки и проче...
 body {
     background: #F2F2F2;
-    @media (max-width: 1600px) {
+    @media (max-width: 1599px) {
         @include adaptiveValue("font-size", 24, 14, 1600, 400);
     }
 }
@@ -14,7 +14,7 @@ body {
 }
 a {
     display: inline-flex;
-    @media (max-width: 1600px) {
+    @media (max-width: 1599px) {
         @include adaptiveValue("font-size", 24, 14, 1600, 400);
     }
 }
@@ -65,7 +65,7 @@ a {
     font-size: 96px;
     font-weight: 700;
     text-align: center;
-    @media (max-width: 1600px) {
+    @media (max-width: 1599px) {
         @include adaptiveValue("font-size", 96, 64, 1600, 1024);
     }
     @media (max-width: 1199px) {

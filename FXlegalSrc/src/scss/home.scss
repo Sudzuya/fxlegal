@@ -36,7 +36,7 @@
         display: flex;
         justify-content: space-between;
         padding-right: 164px;
-        @media(max-width: 1600px) {
+        @media(max-width: 1599px) {
             @include adaptiveValue("padding-right", 164, 24, 1600, 1024);
         }
         @media (max-width:992px) {
@@ -64,10 +64,10 @@
         font-weight: 700;
         margin-bottom: 53px;
         position: relative;
-        @media(max-width: 1600px) {
-            @include adaptiveValue("font-size", 96, 64, 1600, 1024);
-            @include adaptiveValue("line-height", 125, 84, 1600, 1024);
-            @include adaptiveValue("margin-bottom", 53, 36, 1600, 1024);
+        @media(max-width: 1599px) {
+            @include adaptiveValue("font-size", 96, 64, 1600, 1022);
+            @include adaptiveValue("line-height", 125, 84, 1600, 1022);
+            @include adaptiveValue("margin-bottom", 53, 36, 1600, 1022);
         }
         @media(max-width: 1023px) {
             @include adaptiveValue("font-size", 64, 28, 1024, 320);
@@ -82,7 +82,7 @@
             &:nth-child(2){
                 letter-spacing: -12px;
                 margin-right: 14px;
-                @media (max-width:1600px) {
+                @media (max-width:1599px) {
                     @include adaptiveValue("letter-spacing", -12 , -8, 1600, 800 );
                     @include adaptiveValue("margin-right", 14 , 7, 1600, 320 );
                 }
@@ -101,13 +101,13 @@
         font-size: 24px;
         line-height: 31px;
         width: 555px;
-        @media(max-width: 1600px) {
-            @include adaptiveValue("width", 555, 500, 1600, 1024);
-            @include adaptiveValue("font-size", 24, 18, 1600, 1024);
-            @include adaptiveValue("line-height", 31, 24, 1600, 1024);
-            @include adaptiveValue("margin-bottom", 81, 35, 1600, 1024);
+        @media(max-width: 1599px) {
+            @include adaptiveValue("width", 555, 500, 1600, 1022);
+            @include adaptiveValue("font-size", 24, 18, 1600, 1022);
+            @include adaptiveValue("line-height", 31, 24, 1600, 1022);
+            @include adaptiveValue("margin-bottom", 81, 35, 1600, 1022);
         }
-        @media(max-width: 1024px) {
+        @media(max-width: 1023px) {
             @include adaptiveValue("font-size", 18, 14, 1024, 320);
             @include adaptiveValue("margin-bottom", 35, 30, 1024, 320);
             line-height: 24px;
@@ -163,7 +163,7 @@
         height: 774px;
         width: 406px;
         flex-shrink: 0;
-        @media(max-width: 1600px) {
+        @media(max-width: 1599px) {
             @include adaptiveValue("height", 774, 544, 1600, 992);
             @include adaptiveValue("width", 406, 300, 1600, 992);
         }
@@ -188,7 +188,7 @@
     position: relative;
     z-index: 5;
     overflow: hidden;
-    @media(max-width: 1600px) {
+    @media(max-width: 1599px) {
         @include adaptiveValue("margin-top", -233, -159, 1600, 1024);
     }
     @media (max-width:768px) {
@@ -205,7 +205,7 @@
     }
     &__title {
         margin-bottom: 55px;
-        @media(max-width: 1600px) {
+        @media(max-width: 1599px) {
             @include adaptiveValue("margin-bottom", 55, 20, 1600, 320);
         }
     }
@@ -232,7 +232,7 @@
 .pulse {
     position: relative;
     padding: 149px 0;
-    @media(max-width: 1600px) {
+    @media(max-width: 1599px) {
         @include adaptiveValue("padding-top", 149, 44, 1600, 320);
         @include adaptiveValue("padding-bottom",
         149,
@@ -257,7 +257,7 @@
     }
     &__title {
         margin-bottom: 69px;
-        @media (max-width: 1600px) {
+        @media (max-width: 1599px) {
             @include adaptiveValue("margin-bottom", 69, 20, 1600, 320);
         }
     }
@@ -273,7 +273,7 @@
 .works {
     position: relative;
     padding: 88px 0;
-    @media (max-width: 1600px) {
+    @media (max-width: 1599px) {
         @include adaptiveValue("padding-bottom", 88, 50, 1600, 320);
         @include adaptiveValue("padding-top",
         88,
@@ -294,10 +294,10 @@
     }
     &__title {
         margin-bottom: 150px;
-        @media (max-width: 1600px) {
-            @include adaptiveValue("margin-bottom", 150, 58, 1600, 1024);
+        @media (max-width: 1599px) {
+            @include adaptiveValue("margin-bottom", 150, 58, 1600, 1021);
         }
-        @media (max-width: 1024px) {
+        @media (max-width: 1022px) {
             @include adaptiveValue("margin-bottom", 58, 73, 1024, 320);
         }
     }
@@ -324,7 +324,7 @@
             flex-direction: column;
             align-items: center;
             position: relative;
-            @media (max-width:1600px) {
+            @media (max-width:1599px) {
                 padding: 0 42px;
                 @include adaptiveValue("padding-top", 102 , 97, 1600, 1024);
                 @include adaptiveValue("padding-bottom", 102 , 90, 1600, 1024);
@@ -356,13 +356,13 @@
                 font-size: 48px;
                 font-weight: 700;
                 margin-bottom: 50px;
-                @media (max-width:1600px) {
-                    @include adaptiveValue("margin-bottom", 50 , 20, 1600, 1024 );
+                @media (max-width:1599px) {
+                    @include adaptiveValue("margin-bottom", 50 , 20, 1600, 1022 );
                     @include adaptiveValue("height", 98 , 48, 1600, 320 );
                     @include adaptiveValue("width", 98 , 48, 1600, 320 );
                     @include adaptiveValue("font-size", 48 , 15, 1600, 320 );
                 }
-                @media (max-width:1024px) {
+                @media (max-width:1023px) {
                     @include adaptiveValue("margin-bottom", 20 , 15, 1024, 320 );
                 }
             }
@@ -373,11 +373,11 @@
             line-height: 130.69%;
             text-align: center;
             margin-bottom: 30px;
-            @media (max-width:1600px) {
-                @include adaptiveValue("margin-bottom", 30 , 20, 1600, 1024 );
+            @media (max-width:1599px) {
+                @include adaptiveValue("margin-bottom", 30 , 20, 1600, 1022 );
                 @include adaptiveValue("font-size", 32 , 24, 1600, 1024 );
             }
-            @media (max-width:1024px) {
+            @media (max-width:1023px) {
                 @include adaptiveValue("margin-bottom", 20 , 15, 1024, 320 );
                 @include adaptiveValue("font-size", 24 , 18, 1024, 320 );
             }
@@ -389,10 +389,10 @@
     padding: 40px 0 100px;
     &__title {
         margin-bottom: 125px;
-        @media (max-width:1600px) {
-            @include adaptiveValue("margin-bottom", 125 , 102, 1600, 1024 ); 
+        @media (max-width:1599px) {
+            @include adaptiveValue("margin-bottom", 125 , 102, 1600, 1022 ); 
         }
-        @media (max-width:1024px) {
+        @media (max-width:1023px) {
             @include adaptiveValue("margin-bottom", 102 , 50, 1024, 320 ); 
         }
     }
@@ -496,13 +496,13 @@
             font-size: 36px;
             margin-bottom: 39px;
             @media (max-width:1024px) {
-                @include adaptiveValue("font-size", 34 , 24, 1024, 320 );
+                @include adaptiveValue("font-size", 34 , 24, 1025, 320 );
             }
         }
         &__price {
             font-size: 14px;
             margin-bottom: 50px;
-            @media (max-width:1024px) {
+            @media (max-width:1023px) {
                 @include adaptiveValue("margin-bottom", 50 , 41, 1024, 320 );
             }
             span {
@@ -510,7 +510,7 @@
                 font-size: 48px;
                 color: #6DDA9B;
                 margin-right: 5px;
-                @media (max-width:1024px) {
+                @media (max-width:1023px) {
                     @include adaptiveValue("font-size", 48 , 36, 1024, 320 );
                 }
             }
@@ -587,11 +587,11 @@
         z-index: -1;
         width: 198px;
         height: 225px;
-        @media (max-width:1600px) {
-            @include adaptiveValue("width", 198 , 105, 1600, 1024 );
-            @include adaptiveValue("height", 225 , 121, 1600, 1024 );
+        @media (max-width:1599px) {
+            @include adaptiveValue("width", 198 , 105, 1600, 1022 );
+            @include adaptiveValue("height", 225 , 121, 1600, 1022 );
         }
-        @media (max-width:1024px) {
+        @media (max-width:1023px) {
             @include adaptiveValue("width", 75 , 90, 1024, 320 );
             @include adaptiveValue("height", 86 , 95, 1024, 320 );
         }
@@ -626,7 +626,7 @@
         }
         &__img {
             margin-bottom: 26px;
-            @media (max-width:1024px) {
+            @media (max-width:1023px) {
                 @include adaptiveValue("margin-bottom", 26 , 15, 1024, 320 );
             }
         }
@@ -634,7 +634,7 @@
             font-weight: 700;
             margin-bottom: 26px;
             font-size: 24px;
-            @media (max-width:1024px) {
+            @media (max-width:1023px) {
                 @include adaptiveValue("margin-bottom", 26 , 20, 1024, 320 );
                 @include adaptiveValue("font-size", 24 , 18, 1024, 320 );
             }
@@ -652,7 +652,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    @media (max-width:1600px) {
+    @media (max-width:1599px) {
         @include adaptiveValue("padding-top", 82 , 42, 1600, 1024 );
         @include adaptiveValue("padding-bottom", 69 , 42, 1600, 1024 );
     }
@@ -663,11 +663,11 @@
         position: absolute;
         height: 410px;
         width: 680px;
-        @media (max-width:1600px) {
-            @include adaptiveValue("height", 410 , 262, 1600, 1024 );
-            @include adaptiveValue("width", 680 , 433, 1600, 1024 );
+        @media (max-width:1599px) {
+            @include adaptiveValue("height", 410 , 262, 1600, 1022 );
+            @include adaptiveValue("width", 680 , 433, 1600, 1022 );
         }
-        @media (max-width:1024px) {
+        @media (max-width:1023px) {
             @include adaptiveValue("height", 262 , 222, 1024, 320 );
             @include adaptiveValue("width", 433 , 366, 1024, 320 );
         }
@@ -695,8 +695,8 @@
         width: 700px;
         margin: 0 auto;
         margin-bottom: 26px;
-        @media (max-width:1600px) {
-            @include adaptiveValue("width", 700 , 527, 1600, 1024 );
+        @media (max-width:1599px) {
+            @include adaptiveValue("width", 700 , 527, 1600, 1022 );
         }
         @media (max-width:1023px) {
             @include adaptiveValue("width", 527 , 700, 1025, 700 );
@@ -710,13 +710,13 @@
         border-radius: 5px;
         padding: 24px 113px;
         font-weight: 700;
-        @media (max-width:1600px) {
-            @include adaptiveValue("padding-left", 113 , 66, 1600, 1024 );
-            @include adaptiveValue("padding-right", 113 , 66, 1600, 1024 );
+        @media (max-width:1599px) {
+            @include adaptiveValue("padding-left", 113 , 66, 1600, 1022 );
+            @include adaptiveValue("padding-right", 113 , 66, 1600, 1022 );
         }
-        @media (max-width:1024px) {
-            @include adaptiveValue("padding-left", 66 , 37, 1600, 320 );
-            @include adaptiveValue("padding-right", 66 , 37, 1600, 320 );
+        @media (max-width:1023px) {
+            @include adaptiveValue("padding-left", 66 , 37, 1024, 320 );
+            @include adaptiveValue("padding-right", 66 , 37, 1024, 320 );
             @include adaptiveValue("padding-top", 24 , 14, 1024, 320 );
             @include adaptiveValue("padding-bottom", 24 , 14, 1024, 320 );
         }
@@ -729,7 +729,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    @media (max-width:1600px) {
+    @media (max-width:1599px) {
         @include adaptiveValue("padding-top", 150 , 60, 1600, 1024 );
         @include adaptiveValue("padding-bottom", 150 , 60, 1600, 1024 );
     }
@@ -758,10 +758,10 @@
     &__title {
         margin-bottom: 149px;
         flex: 0 0 100%;
-        @media (max-width:1600px) {
-            @include adaptiveValue("margin-bottom", 149 , 40, 1600, 1024 );
+        @media (max-width:1599px) {
+            @include adaptiveValue("margin-bottom", 149 , 40, 1600, 1022 );
         }
-        @media (max-width:1024px) {
+        @media (max-width:1023px) {
             @include adaptiveValue("margin-bottom", 40 , 20, 1024, 400 );
         }
         @media (max-width:400px) {
@@ -771,7 +771,7 @@
     &__sub-title{
         margin-bottom: 48px;
         flex: 0 0 100%;
-        @media (max-width:1600px) {
+        @media (max-width:1599px) {
             @include adaptiveValue("margin-bottom", 48 , 60, 1600, 1024 );
         }
         @media (max-width:1024px) {
@@ -788,10 +788,10 @@
         height: 505px;
         margin-bottom: 90px;
         width: 100%;
-        @media (max-width:1600px) {
-            @include adaptiveValue("margin-bottom", 90 , 60, 1600, 1024 );
+        @media (max-width:1599px) {
+            @include adaptiveValue("margin-bottom", 90 , 60, 1600, 1022 );
         }
-        @media (max-width:1024px) {
+        @media (max-width:1023px) {
             flex-direction: column;
             height: 100%;
             @include adaptiveValue("margin-bottom", 60 , 35, 1024, 400 );
@@ -829,13 +829,13 @@
         border-radius: 5px;
         padding: 27px 91px;
         color: #808080;
-        @media (max-width:1600px) {
-            @include adaptiveValue("padding-top", 27 , 23, 1600, 1024 );
-            @include adaptiveValue("padding-bottom", 27 , 23, 1600, 1024 );
-            @include adaptiveValue("padding-right", 91 , 72, 1600, 1024 );
-            @include adaptiveValue("padding-left", 91 , 72, 1600, 1024 );
+        @media (max-width:1599px) {
+            @include adaptiveValue("padding-top", 27 , 23, 1600, 1022 );
+            @include adaptiveValue("padding-bottom", 27 , 23, 1600, 1022 );
+            @include adaptiveValue("padding-right", 91 , 72, 1600, 1022 );
+            @include adaptiveValue("padding-left", 91 , 72, 1600, 1022 );
         }
-        @media (max-width:1024px) {
+        @media (max-width:1023px) {
             @include adaptiveValue("padding-top", 23 , 15, 1024, 400 );
             @include adaptiveValue("padding-bottom", 23 , 15, 1024, 400 );
             @include adaptiveValue("padding-right", 72 , 40, 1024, 400 );
@@ -850,7 +850,7 @@
 .stay-tune {
     padding: 81px 0;
     background: #6DDA9B;
-    @media (max-width:1600px) {
+    @media (max-width:1599px) {
         @include adaptiveValue("padding-bottom", 81 , 60, 1600, 1024 );
         @include adaptiveValue("padding-top", 81 , 60, 1600, 1024 );
     }
@@ -862,7 +862,7 @@
     }
     &__title {
         margin-bottom: 63px;
-        @media (max-width:1600px) {
+        @media (max-width:1599px) {
             @include adaptiveValue("margin-bottom", 63 , 20, 1600, 1024 );
         }
         @media (max-width:1024px) {
@@ -873,10 +873,10 @@
         width: 480px;
         margin: 0 auto;
         margin-bottom: 64px;
-        @media (max-width:1600px) {
-            @include adaptiveValue("margin-bottom", 64 , 34, 1600, 1024 );
+        @media (max-width:1599px) {
+            @include adaptiveValue("margin-bottom", 64 , 34, 1600, 1022 );
         }
-        @media (max-width:1024px) {
+        @media (max-width:1023px) {
             margin-bottom: 34px;
             @include adaptiveValue("width", 480 , 280, 1024, 320 );
         }
