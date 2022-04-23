@@ -457,6 +457,7 @@
     .plan-item {
         display: flex;
         gap: 20px;
+        height: auto;
         @media (max-width:1730px) {
             flex-wrap: wrap;
             justify-content: center;
