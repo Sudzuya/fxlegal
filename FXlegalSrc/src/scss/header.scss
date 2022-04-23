@@ -83,6 +83,7 @@
     background: #B7FCD3;
     z-index: 15;
 	transition: all .5s ease;
+	overflow: auto;
 	@media (max-width:768px) {
 		@include adaptiveValue("padding-left", 50 , 20, 768, 320 );
 	}
@@ -166,6 +167,9 @@
 		.select-lang__btn.active{
 			color: #1B1B1B;
 		}
+	}
+	&__autorization{
+		margin-bottom: 20px;
 	}
 	.social-link{
 		margin-top: auto;

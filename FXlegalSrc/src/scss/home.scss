@@ -69,10 +69,10 @@
             @include adaptiveValue("line-height", 125, 84, 1600, 1024);
             @include adaptiveValue("margin-bottom", 53, 36, 1600, 1024);
         }
-        @media(max-width: 1025px) {
-            @include adaptiveValue("font-size", 64, 28, 1025, 320);
-            @include adaptiveValue("line-height", 84, 35, 1025, 320);
-            @include adaptiveValue("margin-bottom", 36, 20, 1025, 320);
+        @media(max-width: 1024px) {
+            @include adaptiveValue("font-size", 64, 28, 1024, 320);
+            @include adaptiveValue("line-height", 84, 35, 1024, 320);
+            @include adaptiveValue("margin-bottom", 36, 20, 1024, 320);
         }
         @media (max-width:992px) {
             text-align: center;
@@ -457,7 +457,7 @@
     .plan-item {
         display: flex;
         gap: 20px;
-        height: auto;
+        height: auto !important;
         @media (max-width:1730px) {
             flex-wrap: wrap;
             justify-content: center;
