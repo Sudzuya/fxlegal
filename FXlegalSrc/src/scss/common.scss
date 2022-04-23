@@ -34,7 +34,7 @@ a {
     align-items: center;
     justify-content: center;
     border-radius: 15px;
-    @media (max-width:992px) {
+    @media (max-width:991px) {
         @include adaptiveValue("border-radius", 15 , 5, 992, 320 );
         @include adaptiveValue("width", 258 , 156, 992, 320 );
         @include adaptiveValue("height", 69 , 42, 992, 320 );

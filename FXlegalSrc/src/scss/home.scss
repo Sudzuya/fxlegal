@@ -5,7 +5,7 @@
 .main-block {
     position: relative;
     padding-top: 155px;
-    @media (max-width:992px) {
+    @media (max-width:991px) {
         @include adaptiveValue("padding-top", 155 , 120, 992, 320 );
         margin-bottom: 52px;
     }
@@ -16,7 +16,7 @@
         width: 100%;
         top: 430px;
         left: 0;
-        @media (max-width:992px) {
+        @media (max-width:991px) {
             @include adaptiveValue("height",1300 ,465, 992, 320 );
             @include adaptiveValue("top",430 ,155, 992, 320 );
         }
@@ -129,7 +129,7 @@
             text-transform: uppercase;
             font-weight: 700;
             margin-right: 41px;
-            @media (max-width:992px) {
+            @media (max-width:991px) {
                 @include adaptiveValue("margin-right", 41 ,16, 992, 320 );
             }
             @media (max-width:400px) {
@@ -142,7 +142,7 @@
             border: 1px solid #0A0A0A;
             box-shadow: 0px 14px 31px 1px rgb(0 0 0 / 9%);
             padding: 0 50px 0 27px;
-            @media (max-width:992px) {
+            @media (max-width:991px) {
                 @include adaptiveValue("padding-right", 27 ,15, 992, 320 );
                 @include adaptiveValue("padding-left", 50 ,1, 992, 320 );
             }
@@ -153,7 +153,7 @@
                 height: 9px;
                 width: 14px;
                 background-image: url('../img/arrow.svg');
-                @media (max-width:992px) {
+                @media (max-width:991px) {
                     @include adaptiveValue("right", 38 ,15, 992, 320 );
                 }
             }
@@ -164,10 +164,10 @@
         width: 406px;
         flex-shrink: 0;
         @media(max-width: 1599px) {
-            @include adaptiveValue("height", 774, 544, 1600, 992);
-            @include adaptiveValue("width", 406, 300, 1600, 992);
-        }
-        @media(max-width: 992px) {
+            @include adaptiveValue("height", 774, 544, 1600, 990);
+            @include adaptiveValue("width", 406, 300, 1600, 990);
+        }   
+        @media(max-width: 991px) {
             @include adaptiveValue("height", 544, 325, 992, 320);
             @include adaptiveValue("width", 300, 166, 992, 320);
         }
@@ -189,7 +189,7 @@
     z-index: 5;
     overflow: hidden;
     @media(max-width: 1599px) {
-        @include adaptiveValue("margin-top", -233, -159, 1600, 1024);
+        @include adaptiveValue("margin-top", -233, -159, 1600, 992);
     }
     @media (max-width:768px) {
         padding-top: 20px;
@@ -305,7 +305,7 @@
         display: flex;
         justify-content: space-between;
         counter-reset: ol-number;
-        @media (max-width:1200px) {
+        @media (max-width:1199px) {
             @include adaptiveValue("column-gap", 180 , 35, 1200, 880 );
             @include adaptiveValue("row-gap", 53 , 35, 1200, 880 );
             flex-wrap: wrap;
@@ -326,10 +326,10 @@
             position: relative;
             @media (max-width:1599px) {
                 padding: 0 42px;
-                @include adaptiveValue("padding-top", 102 , 97, 1600, 1024);
-                @include adaptiveValue("padding-bottom", 102 , 90, 1600, 1024);
+                @include adaptiveValue("padding-top", 102 , 97, 1600, 1023);
+                @include adaptiveValue("padding-bottom", 102 , 90, 1600, 1023);
             }
-            @media (max-width:1200px) {
+            @media (max-width:1024px) {
                 flex: 0 0 382px;
                 padding: 0 37px;
                 @include adaptiveValue("padding-top", 97 , 25, 1200, 320);
@@ -374,8 +374,8 @@
             text-align: center;
             margin-bottom: 30px;
             @media (max-width:1599px) {
-                @include adaptiveValue("margin-bottom", 30 , 20, 1600, 1022 );
-                @include adaptiveValue("font-size", 32 , 24, 1600, 1024 );
+                @include adaptiveValue("margin-bottom", 30 , 20, 1600, 1023 );
+                @include adaptiveValue("font-size", 32 , 24, 1600, 1023 );
             }
             @media (max-width:1023px) {
                 @include adaptiveValue("margin-bottom", 20 , 15, 1024, 320 );
@@ -423,14 +423,14 @@
             z-index: 5;
             top: 0;
             left: -25px;
-            @media (max-width:400px) {
+            @media (max-width:399px) {
                 @include adaptiveValue("left", -25 ,-27, 400, 320 );
             }
         } 
         &__button-prev{
             height: 30px;
             width: 30px;
-            @media (max-width:600px) {
+            @media (max-width:599px) {
                 @include adaptiveValue("height",30 ,20, 600, 320 );
                 @include adaptiveValue("width",30 ,20, 600, 320 );
             }
@@ -443,7 +443,7 @@
         &__button-next{
             height: 30px;
             width: 30px;
-            @media (max-width:600px) {
+            @media (max-width:599px) {
                 @include adaptiveValue("height",30 ,20, 600, 320 );
                 @include adaptiveValue("width",30 ,20, 600, 320 );
             }
@@ -482,7 +482,7 @@
             @media (max-width:600px) {
                 flex-basis: auto;
             }
-            @media (max-width:576px) {
+            @media (max-width:575px) {
                 @include adaptiveValue("padding-top", 45 , 42, 576, 320 );
                 @include adaptiveValue("padding-left", 30 , 22, 576, 320 );
                 @include adaptiveValue("padding-right", 30 , 22, 576, 320 );
@@ -495,8 +495,8 @@
         &__title {
             font-size: 36px;
             margin-bottom: 39px;
-            @media (max-width:1024px) {
-                @include adaptiveValue("font-size", 34 , 24, 1025, 320 );
+            @media (max-width:1023px) {
+                @include adaptiveValue("font-size", 34 , 24, 1024, 320 );
             }
         }
         &__price {
@@ -549,7 +549,7 @@
                 height: 45px;
                 flex: 0 1 50%;
                 font-size: 18px;
-                @media (max-width:600px) {
+                @media (max-width:599px) {
                     @include adaptiveValue("padding-left", 23 , 5, 600, 320 );
                     @include adaptiveValue("padding-right", 23 , 5, 600, 320 );
                 }
@@ -772,9 +772,9 @@
         margin-bottom: 48px;
         flex: 0 0 100%;
         @media (max-width:1599px) {
-            @include adaptiveValue("margin-bottom", 48 , 60, 1600, 1024 );
+            @include adaptiveValue("margin-bottom", 48 , 60, 1600, 1022 );
         }
-        @media (max-width:1024px) {
+        @media (max-width:1023px) {
             text-align: center;
             @include adaptiveValue("margin-bottom", 60 , 34, 1024, 400 );
         }
@@ -885,7 +885,7 @@
         display: inline-block;
         height: 42px;
         width: 55px;
-        @media (max-width:768px) {
+        @media (max-width:767px) {
             @include adaptiveValue("height", 42 , 30, 768, 320 );
             @include adaptiveValue("width", 55 , 35, 768, 320 );
         }
@@ -896,7 +896,7 @@
         }
         &:not(:last-child) {
             margin-right: 61px;
-            @media (max-width:768px) {
+            @media (max-width:767px) {
             @include adaptiveValue("margin-right", 61 , 35, 768, 320 );
                 
             }

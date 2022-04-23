@@ -5,7 +5,7 @@
 	height: 84px;
 	background: #f2f2f2;
 	z-index: 15;
-	@media (max-width:768px) {
+	@media (max-width:767px) {
 		position: fixed;
 		@include adaptiveValue("height", 84 ,45, 768, 320 );
 	}
@@ -14,7 +14,7 @@
         justify-content: space-between;
 		align-items: center;
 		padding: 20px 0 20px;
-		@media (max-width:768px) {
+		@media (max-width:767px) {
 			@include adaptiveValue("padding-top", 20 ,10, 768, 320 );
 			@include adaptiveValue("padding-bottom", 20 ,10, 768, 320 );
 		}
@@ -22,7 +22,7 @@
     &__logo {
         width: 153px;
         height: 44px;
-		@media (max-width:1024px) {
+		@media (max-width:1023px) {
 			@include adaptiveValue("width", 153 , 120, 1024, 320 );
 			@include adaptiveValue("height", 44 , 25, 1024, 320  );
 		}
@@ -84,7 +84,7 @@
     z-index: 15;
 	transition: all .5s ease;
 	overflow: auto;
-	@media (max-width:768px) {
+	@media (max-width:767px) {
 		@include adaptiveValue("padding-left", 50 , 20, 768, 320 );
 	}
 	&__item{
@@ -94,7 +94,7 @@
 		font-size: 32px;
 		font-weight: 700;
 		color: #4D4D4D;
-		@media (max-width:768px) {
+		@media (max-width:767px) {
 			@include adaptiveValue("font-size", 32 , 16, 768, 320 );
 		}
 	}
@@ -105,7 +105,7 @@
 			color: #4D4D4D;
 			margin-right: 20px;
 		}
-		@media (max-width:576px) {
+		@media (max-width:575px) {
 			a{
 				@include adaptiveValue("font-size",18 ,16 ,576, 320 );
 				@include adaptiveValue("height",40 ,30 ,576, 320 );
@@ -134,13 +134,13 @@
 				height: 20px;
 				width: 20px;
 				transition: all .5s ease;
-				@media (max-width:768px) {
+				@media (max-width:767px) {
 					@include adaptiveValue("left", 160 , 85, 768, 320 );
 					@include adaptiveValue("height", 20 , 8, 768, 320 );
 					@include adaptiveValue("width", 20 , 14, 768, 320 );
 				}
 			}
-			@media (max-width:768px) {
+			@media (max-width:767px) {
 				@include adaptiveValue("font-size", 32 , 16, 768, 320 );
 			}
 		}
@@ -154,7 +154,7 @@
 			font-size: 24px;
 			font-weight: 700;
 			color: #4D4D4D;
-			@media (max-width:768px) {
+			@media (max-width:767px) {
 				@include adaptiveValue("font-size", 24 , 14, 768, 320 );
 			}
 		}
@@ -178,11 +178,11 @@
 			width: 55px;
 			&:not(:last-child){
 				margin-right: 31px;
-				@media (max-width:768px) {
+				@media (max-width:767px) {
 					@include adaptiveValue("margin-right", 31 , 20, 768, 320 );
 				}
 			}
-			@media (max-width:768px) {
+			@media (max-width:767px) {
 				@include adaptiveValue("height", 55 , 30, 768, 320 );
 				@include adaptiveValue("width", 55 , 30, 768, 320 );
 			}

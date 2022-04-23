@@ -8,22 +8,20 @@
         color: #FFFFFF;
         justify-content: space-between;
         column-gap: 300px;
-        @media (max-width:1600px) {
+        @media (max-width:1599px) {
             @include adaptiveValue("column-gap", 300 ,40, 1600, 992 );
-        }
-        @media (max-width:992px) {
         }
     }
     .logo-info {
         flex: 0 0 420px;
-        @media (max-width:1600px) {
+        @media (max-width:1599px) {
             @include adaptiveValue("flex-basis", 420 ,340, 1600, 992 );
         }
         @media (max-width:992px) {
             flex: 0 0 100%;
             margin-bottom: 35px;
         }
-        @media (max-width:768px) {
+        @media (max-width:767px) {
             @include adaptiveValue("margin-bottom", 35 , 15, 768, 320 );
         }
         &__text {
@@ -42,7 +40,7 @@
             @media (max-width:992px) {
                 margin-bottom: 24px;
             }
-            @media (max-width:768px) {
+            @media (max-width:767px) {
                 @include adaptiveValue("width", 230 , 80, 768, 320 );
                 @include adaptiveValue("height", 60 , 20, 768, 320 );
             }
@@ -105,7 +103,7 @@
         &__link {
             height: 42px;
             width: 54px;
-            @media (max-width:576px) {
+            @media (max-width:575px) {
                 @include adaptiveValue("width", 54 ,28, 576, 320 );
             }
             img{
@@ -114,7 +112,7 @@
             }
             &:not(:last-child) {
                 margin-right: 50px;
-                @media (max-width:1600px) {
+                @media (max-width:1599px) {
                     @include adaptiveValue("margin-right", 50 ,31, 1600, 320 );
                 }
             }
