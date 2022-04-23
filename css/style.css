@@ -2739,6 +2739,7 @@ a {
 .plan .plan-item {
   display: flex;
   gap: 20px;
+  height: auto;
 }
 @media (max-width: 1730px) {
   .plan .plan-item {
