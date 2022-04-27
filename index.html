@@ -6,13 +6,13 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220329190424">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220427145854">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 </head>
 
-<body>
+<body class="hidden">
 	<div class="preloader">
 		<div class="preloader__body">
 			<div class="preloader__sub-img">
@@ -27,13 +27,13 @@
 		<header class="header">
 			<div class="header__container">
 				<div class="header__body">
-					<a href="#" class="header__logo">
+					<a href="#" data-goto=".page" class="header__logo">
 						<img class="logo__img" src="img/logo.svg" alt="">
 					</a>
 					<div class="header__navigate navigate">
 						<div class="navigate__btn-body">
 							<a href="#" class="navigate__authorization btn-header btn_gray">Sign up</a>
-							<a href="https://auth.fx.legal/" class="navigate__authorization btn-header btn_green">Sign up</a>
+							<a href="https://auth.fx.legal/" class="navigate__authorization btn-header btn_green">Sign in</a>
 						</div>
 						<div class="navigate__select-lang">
 							<button class="navigate__lang">EN</button>
@@ -74,7 +74,7 @@
 					<div class="mobile-menu__autorization">
 						<div class="mobile-menu__autorization-body">
 							<a href="#" class="mobile-menu__authorization btn-header btn_gray">Sign up</a>
-							<a href="https://auth.fx.legal/" class="mobile-menu__authorization btn-header btn_green">Sign up</a>
+							<a href="https://auth.fx.legal/" class="mobile-menu__authorization btn-header btn_green">Sign in</a>
 						</div>
 					</div>
 					<div class="mobile-menu__social social-link">
@@ -118,7 +118,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="who">
+			<section id="who" class="who">
 				<div class="who__bg">
 					<picture><source srcset="img/main_2.webp" type="image/webp"><img src="img/main_2.png" alt=""></picture>
 				</div>
@@ -541,7 +541,7 @@
 	</div>
 </div>
  -->
-	<script src="js/app.min.js?_v=20220329190424"></script>
+	<script src="js/app.min.js?_v=20220427145854"></script>
 </body>
 
 </html>
